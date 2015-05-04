@@ -1,0 +1,23 @@
+{
+  "name": "anyServer",
+  "version": "1.0.0",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/jfw10973/repository.git"
+  },
+  "description": "Run Server anywhere you want",
+  "main": "index.js",
+  "scripts": {
+    "test": "node index.js"
+  },
+  "author": "jfw10973",
+  "license": "MIT",
+  "devDependencies": {
+    "commander": "^2.8.1",
+    "connect": "^3.3.5",
+    "connect-livereload": "^0.5.3",
+    "serve-index": "^1.6.3",
+    "serve-static": "^1.9.2",
+    "tiny-lr": "^0.1.5"
+  }
+}
