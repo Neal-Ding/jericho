@@ -1,3 +1,5 @@
+#!/usr/bin/env node
+
 var connect = require('./lib/connect.js'),
 	commander = require('commander'),
 	exec = require('child_process').exec,

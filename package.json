@@ -1,6 +1,7 @@
 {
   "name": "anyServer",
   "version": "1.0.0",
+  "preferGlobal": true,
   "repository": {
     "type": "git",
     "url": "git://github.com/jfw10973/repository.git"
