@@ -19,7 +19,7 @@ connect.server({
 	port: config.port
 });
 
-exec('start ' + 'http://localhost:' + config.port + '/index.js');
+exec('start ' + 'http://localhost:' + config.port + '/');
 
 
 // console.log(process.platform);

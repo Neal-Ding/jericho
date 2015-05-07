@@ -1,6 +1,6 @@
 {
-  "name": "anyServer",
-  "version": "1.0.0",
+  "name": "jericho",
+  "version": "1.0.2",
   "preferGlobal": true,
   "repository": {
     "type": "git",
@@ -20,5 +20,20 @@
     "serve-index": "^1.6.3",
     "serve-static": "^1.9.2",
     "tiny-lr": "^0.1.5"
+  },
+  "bin": {
+    "jericho": "./index.js"
+  },
+  "bugs": {
+    "url": "https://github.com/jfw10973/repository/issues"
+  },
+  "homepage": "https://github.com/jfw10973/repository",
+  "dependencies": {
+    "commander": "^2.8.1",
+    "connect-livereload": "^0.5.3",
+    "serve-index": "^1.6.3",
+    "serve-static": "^1.9.2",
+    "tiny-lr": "^0.1.5",
+    "connect": "^3.3.5"
   }
 }
