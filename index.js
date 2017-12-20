@@ -6,21 +6,20 @@ var connect = require('./lib/connect.js'),
 	config;
 
 config = {
-	port: 2345
+	serverPort: 2346
 };
 
 commander
-	.option('-d, --dictionary [dir]', 'Server Dictionary [./]', './')
+	.option('-d, --directory [dir]', 'Server Directory [./]', './')
+	.option('-p, --port <n>', 'Server Directory [./]', './')
 	.parse(process.argv);
 
 connect.server({
-	root: commander.dictionary,
+	root: commander.directory,
 	livereload: true,
-	port: config.port
+	port: commander.port || config.port
 });
 
-exec('start ' + 'http://localhost:' + config.port + '/');
+exec('start ' + 'https://localhost:' + config.serverPort + '/');
 
-
-// console.log(process.platform);
-console.log(commander.dictionary);
+console.log(commander.directory);
